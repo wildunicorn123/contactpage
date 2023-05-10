@@ -1,0 +1,135 @@
+body{
+    background-color:grey;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div,textarea, input{
+    box-sizing:border-box;
+}
+.flex-container{
+    max-width: 510px;
+    min-width: 324px;
+    margin: 50px auto 0px;
+    background-color: white;
+    border: 2px lightgray;
+    border-bottom: 3px solid;
+}
+.day-of-week, .date-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.date-grid button:first-child{
+    grid-column: 7;
+}
+.calandar{
+    max-width: max-content;
+    margin: 3em auto 2em auto;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 0.041);
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+}
+.month-indicator{
+    color:black;
+    text-align:center;
+    font-weight: 500;
+}
+.day-of-week > * {
+    font-size:medium;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    text-align: center;
+}
+.date-grid{
+    margin-top: 0.5em;
+}
+.date-grid button{
+    position:relative;
+    border:0;
+    width:4.5ch;
+    height:4.5ch;
+    border: radius 5px;;
+    background-color: lightgray;
+}
+.date-grid button :hover{
+    background-color: rgb(137, 165, 190);
+}
+.flex-container{
+    display: flex;
+    align-items: stretch;
+    background-color: whitesmoke;
+}
+.row{
+    width:100;
+    margin:0 0 1em 0;
+    padding:0 2.5em;
+}
+.header{
+padding:1em 2em;
+border-bottom: 1px;
+background-image: url(./assets/509838.jpg);
+left: -70;
+color:antiquewhite;
+}
+.btn-btn-submit {
+    font-size: pxtoem(17, 16);
+    display: inline-block;
+    padding: 0.74em 1.5em;
+    margin: 1.5em 0 0;
+    color: black;
+    border-width: 0 0 0 0;
+    border-bottom: 5px solid;
+    text-transform: uppercase;
+}
+ul {
+    margin: 0;
+    padding: 2em;
+    list-style: none;
+}
+li {
+    margin: 0 0 0.25em 0;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+    .req {
+        color:pink;
+    }
+    input {
+        margin: 0 0 0.5em 0;
+        border: 1px solid grey;
+        padding: 6px 10px;
+        color: darkgrey;
+        font-size: pxtoem(16, 16);
+    }
+    h3{
+        text-align:center
+    }
+.heading {
+        background-image: url(./assets/books.webp);
+        top: 0;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 15px;
+        font-size: medium;
+        color: white;
+        font-size: 35px;
+        height: 50px;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius:40px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
